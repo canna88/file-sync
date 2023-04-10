@@ -23,11 +23,11 @@ To use this tool, follow these steps:
     - Destination directory path
     - Log directory path
     - Synchronization interval in seconds
- To modify the start.bat file, you can use a text editor like Notepad or a software like Visual Studio Code
- 
- For example:
-  start.bat C:\Users\user\source_directory C:\Users\user\destination_directory C:\Users\user\log_directory 60
- This will synchronize the `source_directory` with `destination_directory` every 60 seconds and log events to the `log_directory`.
+     To modify the start.bat file, you can use a text editor like Notepad or a software like Visual Studio Code
+
+     For example:
+      start.bat C:\Users\user\source_directory C:\Users\user\destination_directory C:\Users\user\log_directory 60
+     This will synchronize the `source_directory` with `destination_directory` every 60 seconds and log events to the `log_directory`.
 4. Run the `start.bat` file to start the synchronization process
 
 ## Features
