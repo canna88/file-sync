@@ -1,8 +1,5 @@
 # file-sync
 
-
-# File Synchronization Tool
-
 This is a Python script that synchronizes files between two directories. The script performs the following operations:
 
 - Deletes files from the destination directory that are not present in the source directory
