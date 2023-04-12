@@ -25,18 +25,18 @@ To use this tool, follow these steps:
     - python.exe path
     - file_sync.py path
     - For example:
-         @echo off
-         "C:\Users\Admin\AppData\Local\Programs\Python\Python39\python.exe" "C:\Users\Admin\Documents\file_syc_directory\file_sync.py"
-         pause
+        - @echo off
+        - "C:\Users\Admin\AppData\Local\Programs\Python\Python39\python.exe" "C:\Users\Admin\Documents\file_syc_directory\file_sync.py"
+        - pause
      
 3. Run the `start.bat` file to start the synchronization process
     - you will ask to write: source_path, destination_path, log_path and synchronization's interval in seconds
     - you can write the paths without the quotation marks
     - For example:
-        C:\Users\Admin\Documents\file_syc_directory\Source_dir\
-        C:\Users\Admin\Documents\file_syc_directory\Destination_dir\
-        C:\Users\Admin\Documents\file_syc_directory\Log_dir\
-        4
+        - C:\Users\Admin\Documents\file_syc_directory\Source_dir\
+        - C:\Users\Admin\Documents\file_syc_directory\Destination_dir\
+        - C:\Users\Admin\Documents\file_syc_directory\Log_dir\
+        - 4
 
 ## Features
 
