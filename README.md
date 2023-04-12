@@ -48,7 +48,7 @@ To use this tool, follow these steps:
         - "Updated" when an existing file in the destination directory is updated with a newer version from the source directory
         - "Deleted" when a file is deleted from the destination directory because it is not present in the source directory
     - File name of the affected file
-3. errors detector:
+3. Errors detector:
     - The script checks for any errors that occur during the synchronization process. If an error occurs and the loop is no longer running, the script will display a message stating "An error occurred during synchronization. Please check your directories and synchronization interval and try again."
     - If there are no files inside the source directory, the script will log an event with the message "No files found in the source directory." This will be useful for auditing and troubleshooting purposes.
     - The script checks if the paths provided for source, destination, and log directories exist. If any of these directories do not exist, an error message will be displayed, and the user will be prompted to retype the path.
