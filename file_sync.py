@@ -6,9 +6,22 @@ import time
 
 # get the source directory, destination directory, log path, and sync interval from command-line arguments
 source_dir = input("Enter the source directory path: ")
+while os.path.exists(source_dir) == False:
+    source_dir = input("Path does not exist - Enter the source directory path: ")
+
 destination_dir = input("Enter the destination directory path: ")
+while os.path.exists(destination_dir) == False:
+    destination_dir = input("Path does not exist - Enter the destination directory path: ")
+
 log_path = input("Enter the log directory path: ")
-interval = int(input("Enter the synchronization interval in seconds: "))
+while os.path.exists(log_path) == False:
+    log_path = input("Path does not exist - Enter the log directory path: ")
+    
+interval = input("Enter the positive and numeric synchronization interval in seconds: ")
+while interval.isdigit() == False or int(interval) <= 0:
+    interval = input("Your interval is not correct - Enter the positive and numeric synchronization interval in seconds: ")
+interval = int(interval)
+
 
 
 while True:
@@ -24,7 +37,7 @@ while True:
         df_events = pd.DataFrame(columns)
         
         # check if there are files inside the source directory
-        if len(list_source)==0:
+        if len(list_source)==0 and len(list_destination_dir)==0:
             now = datetime.now()
             dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
             new_row_no_file = {"time": dt_string,"event" : "empty_source_dir", "file_name" : "no_file_to_copy"}
